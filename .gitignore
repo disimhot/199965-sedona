@@ -9,3 +9,7 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+
+*.json
+.vs/199965-sedona/v15/.suo
+*.sqlite
