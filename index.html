@@ -91,14 +91,18 @@
 						<p class="search-parameter">
 								<label for="adults-quantity">Взрослые:</label>
 								<input id="adults-quantity" type="number" name="adults" value="2" min="1" max="10">
-								<input type="button" class="reduce-adult">Уменьшить</button>
-								<input type="button" class="add-adult">Увеличить</button>
+								<label class="visually-hidden" for="button-reduce-adult">Уменьшить</label>
+								<input type="button" class="reduce-adult" id="button-reduce-adult"></button>
+								<label class="visually-adult" for="button-add-adult">Увеличить</label>
+								<input type="button" class="add-adult" id="button-add-adult"></button>
 						</p>
 						<p class="search-parameter">
 								<label for="children-quantity">Дети:</label>
 								<input id="children-quantity" type="number" name="children" value="0" min="0" max="10">
-								<input type="button" class="reduce-child">Уменьшить</button>
-								<input type="button" class="add-child">Увеличить</button>
+								<label class="visually-hidden" for="button-reduce-child">Уменьшить</label>
+								<input type="button" class="reduce-child" id="button-reduce-child"></button>
+								<label class="visually-hidden" for="button-add-child">Увеличить</label>
+								<input type="button" class="add-child" id="button-add-child"></button>
 						</p>
 						<button class="button" type="submit">Найти</button>
 					</fieldset>

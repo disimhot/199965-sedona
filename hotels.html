@@ -24,21 +24,70 @@
     <main class="hotels-container">
         <h1 class="visually-hidden">Варианты отелей в Седоне</h1>
         <section class="search- filters">
-            <div class="filters-background">
-                <!--Здесь будет фон для фильтров-->
-            </div>
-            <!--Формы фильтров-->
+            <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <ul>
+                        <li class="filter-parameter">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming-pool" id="filter-swimming-pool"
+                                checked>
+                            <label for="filter-swimming-pool">Бассейн</label>
+                        </li>
+                        <li class="filter-parameter">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                            <label for="filter-parking">Парковка</label>
+                        </li>
+                        <li class="filter-parameter">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                            <label for="filter-wi-fi">Wi-fi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <ul>
+                        <li class="filter-parameter">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel"
+                                checked>
+                            <label for="filter-hotel">Гостиница</label>
+                        </li>
+                        <li class="filter-parameter">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel"
+                            checked>
+                            <label for="filter-motel">Мотель</label>
+                        </li>
+                        <li class="filter-parameter">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments"
+                            checked>
+                            <label for="filter-apartments">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Стоимость в сутки (р):</legend>
+                    <span class="price-range">От 0</span><span class="price-range">До 3000</span>
+                    <label class="visually-hidden" for="filter-price-range">Выберите стоимость</label>
+                    <input class="filter-range" type="range" name="price" id="filter-price-range" min="0" max="3000" value="2000" step="100">
+                </fieldset>
+                <button type="submit" class="filter-button button">Показать</button>
+            </form>
         </section>
         <section class="search-results">
             <h2 class="search-results-number">Найдено: 3</h2>
             <p>Сортировка:</p>
-            <ul class="search-sorting">
-                <li><a class="sorting-button price current" href="#">По цене</a></li>
-                <li><a class="sorting-button type" href="#">По типу</a></li>
-                <li><a class="sorting-button rating" href="#">По рейтингу </a></li>
-                <li><a class="sorting-button stars right" href="#">
-                        <!--Изображение сортировочной кнопки-->
-                    </a></li>
+            <ul class="sorting-parameters">
+                <li><a class="sorting-parameter price current" href="#">По цене</a></li>
+                <li><a class="sorting-parameter type" href="#">По типу</a></li>
+                <li><a class="sorting-parameter rating" href="#">По рейтингу </a></li>
+                <form class="sorting-buttons" method="post" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend class="visually-hidden">Порядок сортировки</legend>
+                        <label class="visually-hidden" for="button-reduce-child">По убыванию</label>
+                        <input type="button" class="sorting-button" id="button-descending"></button>
+                        <label class="visually-hidden" for="button-ascending">По возрастанию</label>
+                        <input type="button" class="sorting-button" id="button-ascending"></button>
+                    </fieldset>
+                </form>
             </ul>
             <ul class="found-hotels-results">
                 <li class="found-hotel">
