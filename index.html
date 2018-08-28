@@ -23,7 +23,7 @@
 	</header>
 	<main class='container'>
 		<div class="index-main-pic">
-			<img src="img/ind/index-main-group.jpg" width='1200' height="800" alt='Седона — небольшой городок в Аризоне, заслуживающий большего!'>
+			<img src="img/ind/index-main-group.jpg" width='1200' height="800" alt='Welcome to the gorgeous Sedona. Because the Grand Canyon sucks'>
 			<!-- Свойство :after для полигона -->
 		</div>
 		<h1 class='main-slogan'>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -76,37 +76,41 @@
 				<img src="img/ind/map.jpg" width="1200" alt="Город Седона на карте">
 				<b class="travel-effect">Заинтересовались?</b>
 				<p class="travel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-
-				<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-					<fieldset>
-						<legend class="travel-search">Поиск гостиницы в Седоне</legend>
-						<p class="search-parameter">
-							<label for="arrival-date-field">Дата заезда:</label>
-							<input id="arrival-date-field" type="text" name="arrival-date" value="" placeholder="24 апреля 2017" required>
-						</p>
-						<p class="search-parameter">
-							<label for="departure-date-field">Дата выезда:</label>
-							<input id="departure-date-field" type="text" name="departure-date" value="" placeholder="4 июля 2017" required>
-						</p>
-						<p class="search-parameter">
-							<label for="adults-quantity">Взрослые:</label>
-							<input id="adults-quantity" type="number" name="adults" value="2" min="1" max="10">
-							<label class="visually-hidden" for="button-reduce-adult">Уменьшить</label>
-							<input type="button" class="reduce-adult" id="button-reduce-adult"></button>
-							<label class="visually-adult" for="button-add-adult">Увеличить</label>
-							<input type="button" class="add-adult" id="button-add-adult"></button>
-						</p>
-						<p class="search-parameter">
-							<label for="children-quantity">Дети:</label>
-							<input id="children-quantity" type="number" name="children" value="0" min="0" max="10">
-							<label class="visually-hidden" for="button-reduce-child">Уменьшить</label>
-							<input type="button" class="reduce-child" id="button-reduce-child"></button>
-							<label class="visually-hidden" for="button-add-child">Увеличить</label>
-							<input type="button" class="add-child" id="button-add-child"></button>
-						</p>
-						<button class="button" type="submit">Найти</button>
-					</fieldset>
-				</form>
+				<div class="main-form">
+					<button class="travel-search-button">Поиск гостиницы в Седоне</button>
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+						<fieldset>
+							<legend class="visually-hidden">Выбор параметров поиска гостиницы</legend>
+							<p class="search-parameter">
+								<label for="arrival-date-field">Дата заезда:</label>
+								<input id="arrival-date-field" type="text" name="arrival-date" value="" placeholder="24 апреля 2017" required>
+								<button class="calendar" id="calendar-arrival"></button>
+							</p>
+							<p class="search-parameter">
+								<label for="departure-date-field">Дата выезда:</label>
+								<input id="departure-date-field" type="text" name="departure-date" value="" placeholder="4 июля 2017" required>
+								<button class="calendar" id="calendar-departure"></button>
+							</p>
+							<p class="search-parameter">
+								<label for="adults-quantity">Взрослые:</label>
+								<input id="adults-quantity" type="number" name="adults" value="2" min="1" max="10">
+								<label class="visually-hidden" for="button-reduce-adult">Уменьшить</label>
+								<input type="button" class="reduce-adult" id="button-reduce-adult" ></button>
+								<label class="visually-adult" for="button-add-adult">Увеличить</label>
+								<input type="button" class="add-adult" id="button-add-adult"></button>
+							</p>
+							<p class="search-parameter">
+								<label for="children-quantity">Дети:</label>
+								<input id="children-quantity" type="number" name="children" value="0" min="0" max="10">
+								<label class="visually-hidden" for="button-reduce-child">Уменьшить</label>
+								<input type="button" class="reduce-child" id="button-reduce-child"></button>
+								<label class="visually-hidden" for="button-add-child">Увеличить</label>
+								<input type="button" class="add-child" id="button-add-child"></button>
+							</p>
+							<button class="button" type="submit">Найти</button>
+						</fieldset>
+					</form>
+				</div>
 			</div>
 		</section>
 	</main>
