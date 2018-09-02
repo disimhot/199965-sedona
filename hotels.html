@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Отели Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
 </head>
 
@@ -31,16 +31,16 @@
                     <legend>Инфраструктура:</legend>
                     <ul>
                         <li class="filter-parameter">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming-pool" id="filter-swimming-pool"
+                            <input class="visually-hidden filter-input" type="checkbox" name="swimming-pool" id="filter-swimming-pool"
                                 checked>
                             <label for="filter-swimming-pool">Бассейн</label>
                         </li>
                         <li class="filter-parameter">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                            <input class="visually-hidden filter-input" type="checkbox" name="parking" id="filter-parking">
                             <label for="filter-parking">Парковка</label>
                         </li>
                         <li class="filter-parameter">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                            <input class="visually-hidden filter-input"  type="checkbox" name="wi-fi" id="filter-wi-fi">
                             <label for="filter-wi-fi">Wi-fi</label>
                         </li>
                     </ul>
@@ -49,15 +49,15 @@
                     <legend>Тип жилья:</legend>
                     <ul>
                         <li class="filter-parameter">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                            <input class="visually-hidden filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
                             <label for="filter-hotel">Гостиница</label>
                         </li>
                         <li class="filter-parameter">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                            <input class="visually-hidden filter-input" type="checkbox" name="motel" id="filter-motel" checked>
                             <label for="filter-motel">Мотель</label>
                         </li>
                         <li class="filter-parameter">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments"
+                            <input class="visually-hidden filter-input" type="checkbox" name="apartments" id="filter-apartments"
                                 checked>
                             <label for="filter-apartments">Апартаменты</label>
                         </li>
@@ -98,11 +98,11 @@
                     </p>
                     <div class="found-hotel-information">
                         <h3>
-                            <a href="found-hotel.html">Amara Resort & Spa</a>
+                            <a class="hotel-name" href="found-hotel.html">Amara Resort & Spa</a>
                         </h3>
                         <b>Гостиница от 4000 р.</b>
-                        <a href="found-hotel-details.html">Подробнее</a>
-                        <a class="button" href="#">Забронировать</a>
+                        <a class="details-button" href="found-hotel-details.html">Подробнее</a>
+                        <a class="button reserve-button" href="#">Забронировать</a>
                     </div>
                     <div class="found-hotel-ratings">
                         <img src="img/star.svg" width="18" height="17" alt="4 звезды">
@@ -117,11 +117,11 @@
                     </p>
                     <div class="found-hotel-information">
                         <h3>
-                            <a href="found-hotel.html">Desert Quail Inn</a>
+                            <a class="hotel-name" href="found-hotel.html">Desert Quail Inn</a>
                         </h3>
                         <b>Мотель от 3000 р.</b>
-                        <a href="found-hotel-details.html">Подробнее</a>
-                        <a class="button" href="#">Забронировать</a>
+                        <a class="details-button" href="found-hotel-details.html">Подробнее</a>
+                        <a class="button reserve-button" href="#">Забронировать</a>
                     </div>
                     <div class="found-hotel-ratings">
                         <img src="img/star.svg" width="18" height="17" alt="3 звезды">
@@ -136,11 +136,11 @@
                     </p>
                     <div class="found-hotel-information">
                         <h3>
-                            <a href="found-hotel.html">Villas at Poco Diablo</a>
+                            <a class="hotel-name" href="found-hotel.html">Villas at Poco Diablo</a>
                         </h3>
                         <b>Апартаменты от 2000 р.</b>
-                        <a href="found-hotel-details.html">Подробнее</a>
-                        <a class="button" href="#">Забронировать</a>
+                        <a class="details-button" href="found-hotel-details.html">Подробнее</a>
+                        <a class="button reserve-button" href="#">Забронировать</a>
                     </div>
                     <div class="found-hotel-ratings">
                         <img src="img/star.svg" width="18" height="17" alt="2 звезды">
