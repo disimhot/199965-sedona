@@ -5,10 +5,10 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  color: 000000;
+  color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -19,6 +19,7 @@ a {
   font-weight: bold;
   color: #000000;
 
+  
   background-color: #ffffff;
 }
 
@@ -38,11 +39,6 @@ a {
 }
 .main-navigation a:visited {
   color: #b7b7b7;
-}
-
-.index-main-pic::after {
-  content: "";
-  background-image: url("img/ind/polygon-main-pic.png");
 }
 
 .container .main-slogan {
@@ -347,3 +343,58 @@ a {
   color: #666666;
 }
 /* Сеточные стили */
+
+.main-navigation{
+  width: 1200px;
+  margin: 0 auto; 
+  padding: 0;
+
+  display: flex;
+}
+.main-navigation li{
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin: auto; 
+}
+.main-navigation li:nth-child(2){
+  margin-right: 244px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.index-main-pic{
+  margin: 0;
+  position: relative;
+}
+.index-main-pic::after {
+  content: "";
+  width: 1200px;
+  height: 60px;
+  background-image: url("img/ind/polygon-main-pic.png");
+  bottom: 5px;
+  position:absolute;
+}
+.index-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-around;
+
+  background-color: #ffffff;
+}
+.main-slogan, 
+.index-wrapper p{
+  margin: 0;
+  padding: 0;
+}
+
+.main-slogan{
+  width: 440px;
+  margin-bottom: 40px;
+}
+
+
+.reasons-attractions{
+  margin: 0;
+}
