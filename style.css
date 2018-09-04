@@ -19,7 +19,6 @@ a {
   font-weight: bold;
   color: #000000;
 
-  
   background-color: #ffffff;
 }
 
@@ -344,57 +343,94 @@ a {
 }
 /* Сеточные стили */
 
-.main-navigation{
+.main-navigation {
   width: 1200px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0;
 
   display: flex;
 }
-.main-navigation li{
+.main-navigation li {
   padding-top: 22px;
   padding-bottom: 22px;
-  margin: auto; 
+  margin: auto;
 }
-.main-navigation li:nth-child(2){
+.main-navigation li:nth-child(2) {
   margin-right: 244px;
 }
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0;
+
 }
-.index-main-pic{
+.index-main-pic {
   margin: 0;
+  padding: 0;
   position: relative;
-}
+ }
 .index-main-pic::after {
   content: "";
-  width: 1200px;
-  height: 60px;
-  background-image: url("img/ind/polygon-main-pic.png");
+  width: 1202px;
+  height: 59px;
+  background-image: url("img/ind/polygon.png");
+  left: -1px;
   bottom: 5px;
-  position:absolute;
+  position: absolute;
 }
-.index-wrapper{
+.index-wrapper {
   display: flex;
   flex-direction: column;
-  align-items:center;
-  justify-content:space-around;
+  align-items: center;
+  justify-content: space-around;
 
   background-color: #ffffff;
 }
-.main-slogan, 
-.index-wrapper p{
+.main-slogan,
+.index-wrapper p {
   margin: 0;
   padding: 0;
 }
 
-.main-slogan{
+.main-slogan {
   width: 440px;
+  padding-top:55px;
   margin-bottom: 40px;
 }
+.index-wrapper p{
+  padding-bottom: 50px;
+}
 
-
-.reasons-attractions{
+.reasons-attractions {
   margin: 0;
+  padding: 0;
+}
+
+div.reasons-info.left{
+  display: flex;
+}
+.reasons-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.reasons-info.left img{
+  margin-left: auto;
+}
+.attractions{
+  display: flex;
+  justify-content: space-around;
+}
+.attractions-info.left{
+  width:252px;
+  background-image: ("img/icon-1.svg");
+}
+.attractions-info.center{
+  width:284px;
+  background-image: ("img/icon-2.svg");
+}
+.attractions-info.right{
+  width: 273px;
+  background-image: ("img/icon-3.svg");
 }
