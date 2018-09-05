@@ -46,8 +46,8 @@ a {
   text-align: center;
 }
 
-.reasons-attractions .reasons-info:nth-of-type(1),
-.reasons-info:nth-of-type(2) {
+div.reasons-info.left,
+div.reasons-info.right {
   color: #ffffff;
 
   background-color: #81b3d2;
@@ -70,9 +70,7 @@ a {
   text-align: center;
 }
 
-.reasons-attractions .reasons-info:nth-of-type(3),
-.reasons-info:nth-of-type(4),
-.reasons-info:nth-of-type(5) {
+.reasons-container {
   color: #000000;
 
   background-color: #eeeeee;
@@ -190,6 +188,8 @@ a {
 .sedona-hashtag {
   font-weight: bold;
   font-size: 21px;
+
+  margin-left: 132px;
 }
 
 /*Hotels page*/
@@ -199,7 +199,8 @@ a {
 
   background-color: #81b3d2;
   background-image: url("img/hotels/filters-background.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position-y: center;
   background-repeat: no-repeat;
 }
 
@@ -254,6 +255,8 @@ a {
 }
 
 .search-results ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .sorting-parameters a {
@@ -350,6 +353,7 @@ a {
 
   display: flex;
 }
+
 .main-navigation li {
   padding-top: 22px;
   padding-bottom: 22px;
@@ -363,6 +367,7 @@ a {
   margin: 0 auto;
   padding: 0;
 
+  background-color: #ffffff;
 }
 .index-main-pic {
   margin: 0;
@@ -406,14 +411,15 @@ a {
   padding: 0;
 }
 
-div.reasons-info.left{
-  display: flex;
-}
 .reasons-wrapper{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+div.reasons-info.left{
+  display: flex;
 }
 div.reasons-info.left img{
   margin-left: auto;
@@ -421,16 +427,150 @@ div.reasons-info.left img{
 .attractions{
   display: flex;
   justify-content: space-around;
+
+  padding-top:60px;
+  padding-bottom: 80px;
+
+  background-color: #ffffff;
 }
 .attractions-info.left{
   width:252px;
-  background-image: ("img/icon-1.svg");
+
+  background-position: top center;
+  background-image: url("img/icon-1.svg");
+  background-repeat: no-repeat;
 }
 .attractions-info.center{
-  width:284px;
-  background-image: ("img/icon-2.svg");
+  width: 284px;
+
+  background-position: top center;
+  background-image: url("img/icon-2.svg");
+  background-repeat: no-repeat;
 }
 .attractions-info.right{
   width: 273px;
-  background-image: ("img/icon-3.svg");
+
+  background-position: top center;
+  background-image: url("img/icon-3.svg");
+  background-repeat: no-repeat;
+}
+
+div.reasons-info.right{
+  display: flex;
+  flex-direction: row-reverse
+}
+div.reasons-info.left img{
+  margin-right: auto;
+}
+.reasons-container{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 63px;
+}
+.form-wrapper{
+  height: 297px;
+  background-color: #ffffff;
+
+  padding-top: 57px;
+  margin: 0;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.main-form{
+  width: 568px;
+  margin: 0 auto;
+  margin-bottom: 78px;
+  
+  background-color: rgba(255,255,255,0.9);
+}
+
+.main-footer{
+  width: 1200px;
+
+  margin: 0 auto;
+  padding: 0;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  }
+.footer-copyright{
+  margin-right: 101px;
+}
+
+.filter{
+  display: flex;
+  padding-top: 31px;
+  padding-bottom: 35px;
+}
+.filter div:first-child{
+  width:241px;
+  margin-left: 73px;
+}
+.filter div:nth-child(2){
+  width:288px;
+  margin-left: 14px;
+}
+.filter div:last-child{
+  margin-right: 73px;
+  margin-left: auto;
+}
+.search-container{
+  width: 1056px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 35px;
+
+  display:flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.search-container h2,
+.search-container p,
+.search-container ul{
+  margin: 0;
+  padding: 0;
+}
+.search-items{
+  width: 528px;
+
+  display:flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.found-hotel{
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.found-hotel:first-child{
+  border-top: 2px solid #e5e5e5;
+}
+.inner-item-hotel{
+  width: 1056px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 30px;
+
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hotel-wrapper{
+  width: 528px;
+
+  display:flex;
+}
+.found-hotel-information{
+  width: 258px;
+  margin-left: 30px;
 }
