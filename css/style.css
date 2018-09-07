@@ -464,7 +464,6 @@ div.reasons-info.right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
 
   margin-top: 47px;
   margin-bottom: 60px;
@@ -565,38 +564,62 @@ div.reasons-info.left img{
   width: 259px;
 }
 .form-wrapper{
-  height: 297px;
+  height: 244px;
   background-color: #ffffff;
 
-  padding-top: 57px;
+  padding-top: 48px;
   margin: 0;
-
 
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  
+  position: relative;
+  z-index: 1;
 }
+.form-wrapper p{
+  width: 438px;
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+}
+.form-wrapper p>span{
+  padding: 0 69px;
+}
+.map-wrapper{
+  height: 539px; 
+  position: relative;
+  margin: 0;
+  padding: 0;
+  
+}
+.map-wrapper img{
+  position: relative;
+   bottom:140px;
 
-
+   background-size: cover;
+}
 .main-form{
   width: 568px;
   margin: 0 auto;
-  margin-bottom: 78px;
-  
+
   background-color: rgba(255,255,255,0.9);
+  position:absolute;
+  top: 0;
 }
 
 .main-footer{
   width: 1200px;
-
   margin: 0 auto;
   padding: 0;
+
 
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   }
 .footer-copyright{
   margin-right: 101px;
