@@ -437,7 +437,7 @@ div.reasons-info.right {
   margin-bottom: 28px;
 }
 .main-slogan-wrapper p {
-  padding-bottom: 50px;
+  padding-bottom: 51px;
 }
 
 .reasons-attractions {
@@ -446,12 +446,37 @@ div.reasons-info.right {
 }
 
 .reasons-wrapper{
+  width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-top: 47px;
+  margin-bottom: 60px;
+}
+.reasons-name,
+.reasons-number,
+.reasons-description{
+  margin:0;
+  padding: 0;
 }
 
+.reasons-number{
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.reasons-info h2{
+  display: inline-block;
+  margin: auto;
+  width: 151px;
+}
+.reasons-info .reasons-description{
+  display: inline-block;
+  width: 306px;
+  margin:auto;
+}
 div.reasons-info.left{
   display: flex;
 }
