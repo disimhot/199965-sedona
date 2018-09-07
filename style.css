@@ -20,6 +20,7 @@ a {
   color: #000000;
 
   background-color: #ffffff;
+
 }
 
 .main-navigation {
@@ -52,6 +53,7 @@ div.reasons-info.right {
 
   background-color: #81b3d2;
 }
+
 
 .reasons-name,
 .attractions-name {
@@ -345,23 +347,46 @@ div.reasons-info.right {
   color: #666666;
 }
 /* Сеточные стили */
-
-.main-navigation {
+.main-header{
+  position: relative;
+  z-index: 1;
+  width: 1200px;
   width: 1200px;
   margin: 0 auto;
+}
+
+.main-navigation {
+  width: 100%;
+  margin: 0;
   padding: 0;
 
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+    /* temp */
+  /* background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45); */
+}
+.main-navigation li:nth-child(3){
+  margin-left: auto;
 }
 
-.main-navigation li {
-  padding-top: 22px;
-  padding-bottom: 22px;
-  margin: auto;
+.main-navigation a{
+  display: block;
+  width: 239px;
+
+  padding-top: 14px;
+  padding-bottom: 16px;
+  text-align: center;
 }
-.main-navigation li:nth-child(2) {
-  margin-right: 244px;
+
+.main-header-logo{
+  position: absolute;
+  left: 44%;
+  z-index: 2;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -372,37 +397,46 @@ div.reasons-info.right {
 .index-main-pic {
   margin: 0;
   padding: 0;
-  position: relative;
+  top: 0px;
+
+  position: absolute;
  }
 .index-main-pic::after {
   content: "";
-  width: 1202px;
+  width: 1201px;
   height: 59px;
+
+  margin: 0;
+  padding: 0;
   background-image: url("img/ind/polygon.png");
-  left: -1px;
-  bottom: 5px;
+  background-repeat: no-repeat;
+
   position: absolute;
+  bottom: 222px;
+  left: -1px;
 }
-.index-wrapper {
+.index-wrapper{
+  position: relative;
+  top:510px;
+}
+.main-slogan-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-
-  background-color: #ffffff;
+ 
 }
 .main-slogan,
-.index-wrapper p {
+.main-slogan-wrapper p {
   margin: 0;
   padding: 0;
 }
 
 .main-slogan {
   width: 440px;
-  padding-top:55px;
-  margin-bottom: 40px;
+  margin-top: 59px;
+  margin-bottom: 28px;
 }
-.index-wrapper p{
+.main-slogan-wrapper p {
   padding-bottom: 50px;
 }
 
@@ -573,4 +607,27 @@ div.reasons-info.left img{
 .found-hotel-information{
   width: 258px;
   margin-left: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
