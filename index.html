@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 </head>
 
@@ -25,13 +25,14 @@
 	</header>
 	<main class="container">
 		<div class="index-main-pic">
-			<img src="img/ind/index-main-group.jpg" width='1200' height="773" alt='Welcome to the gorgeous Sedona. Because the Grand Canyon sucks'>
+
+
 		</div>
-		<div class="index-wrapper">
+
 			<div class="main-slogan-wrapper">
 				<h1 class='main-slogan'>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-			</div>
+
 			<section class="reasons-attractions">
 				<div class="reasons-info left">
 					<div class="reasons-wrapper">
@@ -83,11 +84,11 @@
 			</section>
 			<section class="travel-search">
 				<div class="travel-search-form">
+						<div class="form-wrapper">
+								<b>Заинтересовались?</b>
+								<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+							</div>
 					<img src="img/ind/map.jpg" width="1200" alt="Город Седона на карте">
-					<div class="form-wrapper">
-						<b>Заинтересовались?</b>
-						<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-					</div>
 					<div class="main-form">
 						<button class="button travel-search-button">Поиск гостиницы в Седоне</button>
 						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -114,8 +115,10 @@
 								<p class="search-parameter">
 									<label for="children-quantity">Дети:</label>
 									<input id="children-quantity" type="number" name="children" value="0" min="0" max="10">
+
 									<label class="visually-hidden" for="button-reduce-child">Уменьшить</label>
 									<input type="button" class="reduce-child" id="button-reduce-child"></button>
+
 									<label class="visually-hidden" for="button-add-child">Увеличить</label>
 									<input type="button" class="add-child" id="button-add-child"></button>
 								</p>

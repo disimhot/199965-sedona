@@ -397,9 +397,13 @@ div.reasons-info.right {
 .index-main-pic {
   margin: 0;
   padding: 0;
-  top: 0px;
+  
+  width: 1200px;
+  height: 591px;
+  background-image: url("../img/ind/index-main-group.jpg");
+  background-position-y:
 
-  position: absolute;
+  position: relative;
  }
 .index-main-pic::after {
   content: "";
@@ -412,13 +416,9 @@ div.reasons-info.right {
   background-repeat: no-repeat;
 
   position: absolute;
-  bottom: 222px;
   left: -1px;
 }
-.index-wrapper{
-  position: relative;
-  top:510px;
-}
+
 .main-slogan-wrapper {
   display: flex;
   flex-direction: column;
