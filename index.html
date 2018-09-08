@@ -86,40 +86,42 @@
 						<p><span>Укажите предполагаемые даты поездки,</span> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 					</div>
 					<div class="map-wrapper">
-						<img src="img/ind/map.jpg" width="100%" alt="Город Седона на карте">
+						<img src="img/ind/map.jpg" width="1200" height="592" alt="Город Седона на карте">
 						<div class="main-form">
 							<button class="button travel-search-button">Поиск гостиницы в Седоне</button>
 							<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 								<fieldset>
 									<legend class="visually-hidden">Выбор параметров поиска гостиницы</legend>
-									<p class="search-parameter">
+									<p class="search-parameter search-date">
 										<label for="arrival-date-field">Дата заезда:</label>
 										<input id="arrival-date-field" type="text" name="arrival-date" value="" placeholder="24 апреля 2017" required>
 										<button class="calendar" id="calendar-arrival"></button>
 									</p>
-									<p class="search-parameter">
+									<p class="search-parameter search-date">
 										<label for="departure-date-field">Дата выезда:</label>
 										<input id="departure-date-field" type="text" name="departure-date" value="" placeholder="4 июля 2017" required>
 										<button class="calendar" id="calendar-departure"></button>
 									</p>
-									<p class="search-parameter">
-										<label for="adults-quantity">Взрослые:</label>
-										<input id="adults-quantity" type="number" name="adults" value="2" min="1" max="10">
-										<label class="visually-hidden" for="button-reduce-adult">Уменьшить</label>
-										<input type="button" class="reduce-adult" id="button-reduce-adult"></button>
-										<label class="visually-adult" for="button-add-adult">Увеличить</label>
-										<input type="button" class="add-adult" id="button-add-adult"></button>
-									</p>
-									<p class="search-parameter">
-										<label for="children-quantity">Дети:</label>
-										<input id="children-quantity" type="number" name="children" value="0" min="0" max="10">
-
-										<label class="visually-hidden" for="button-reduce-child">Уменьшить</label>
-										<input type="button" class="reduce-child" id="button-reduce-child"></button>
-
-										<label class="visually-hidden" for="button-add-child">Увеличить</label>
-										<input type="button" class="add-child" id="button-add-child"></button>
-									</p>
+									
+										<p class="search-parameter">
+											<label for="adults-quantity">Взрослые:</label>
+											<span class="parameter-wrap">
+											<label class="visually-hidden" for="button-reduce-adult">Уменьшить</label>
+											<input type="button" class="reduce" id="button-reduce-adult"></button>
+											<input id="adults-quantity" type="number" name="adults" value="2" min="1" max="10">
+											<label class="visually-hidden" for="button-add-adult">Увеличить</label>
+											<input type="button" class="add-adult" id="button-add-adult"></button>
+										</span>
+											<label for="children-quantity">Дети:</label>	
+											<span class="parameter-wrap">								
+											<label class="visually-hidden" for="button-reduce-child">Уменьшить</label>
+											<input type="button" class="reduce" id="button-reduce-child"></button>
+											<input id="children-quantity" type="number" name="children" value="0" min="0" max="10">
+											<label class="visually-hidden" for="button-add-child">Увеличить</label>
+											<input type="button" class="add-child" id="button-add-child"></button>
+										</span>
+										</p>
+									
 									<button class="button search-submit" type="submit">Найти</button>
 								</fieldset>
 							</form>
@@ -142,7 +144,6 @@
 			<a class="redirection-htmlacademy" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width='115' height="41"
 				 alt='Лого htmlacademy'></a>
 		</p>
-
 	</footer>
 </body>
 

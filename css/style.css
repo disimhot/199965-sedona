@@ -9,6 +9,7 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
+  position: relative;
 }
 
 a {
@@ -150,17 +151,21 @@ div.reasons-info.right {
 .search-form input::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #000000;
+  text-transform: uppercase;
 }
 .search-form input::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #000000;
+  text-transform: uppercase;
 }
 .search-form input:-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: #000000;
+  text-transform: uppercase;
 }
 
 .search-submit {
+  text-align: center;
   background-color: #81b3d2;
 }
 
@@ -183,7 +188,10 @@ div.reasons-info.right {
 .main-footer a {
   color: #000000;
 }
-
+.main-footer ul{
+  margin: 0;
+  padding: 0;
+}
 .main-footer li {
   list-style: none;
 }
@@ -596,30 +604,86 @@ div.reasons-info.left img{
 }
 .map-wrapper img{
   position: relative;
-   bottom:140px;
-
-   background-size: cover;
 }
 .main-form{
   width: 568px;
-  margin: 0 auto;
+  margin: 0 315px;
 
   background-color: rgba(255,255,255,0.9);
   position:absolute;
-  top: 0;
+  z-index: 1;
+  top: -88px;
 }
+.travel-search-button{
+  display: inline-block;
+  width:100%;
+  padding-top: 31px;
+  padding-bottom: 30px;
+  margin-bottom: 35px;
 
+  vertical-align: middle; 
+}
+.search-parameter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 45px;
+  margin-right: 43px;
+  margin-bottom: 28px;
+
+  position: relative;
+
+}
+.search-parameter input{
+  padding: 6px;
+}
+.search-date input{
+  width: 328px;
+
+}
+.calendar{
+  position: absolute;
+}
+.parameter-wrap{
+  display: flex;
+
+  width:115px;
+  margin: 0;
+
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+.search-submit{
+  display: inline-block;
+  vertical-align: middle;
+  width: 457px;
+  margin-top: 26px;
+  margin-left: 44px;
+  margin-bottom: 46px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+
+}
 .main-footer{
   width: 1200px;
+  height: 120px;
   margin: 0 auto;
   padding: 0;
-
-
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  background-color: rgba(255, 255, 255, 0.9);
+
+  position: absolute;
+
+  left: 0; 
+  right: 0;
+ bottom: -43px; 
   }
 .footer-copyright{
   margin-right: 101px;
@@ -696,7 +760,6 @@ div.reasons-info.left img{
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
