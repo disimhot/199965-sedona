@@ -282,11 +282,7 @@ div.reasons-info.right {
   border-bottom-style: none;
 }
 
-.sorting-parameters a:visited {
-  color: #81b3d2;
 
-  border-bottom-style: none;
-}
 
 .hotel-name {
   color: #000000;
@@ -1105,6 +1101,53 @@ b.two-stars::before{
 
   top: 28px;
   right: 0;
+}
+.sorting-order{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+    
+  height: 10px;
+  width: 40px;
+}
+.sorting-order a{
+  font-size: 0;
+}
+.sorting-order a.order-descending{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  
+  border: 8px solid transparent;
+  border-bottom-color: #cacaca;
+}
+.sorting-order a.order-ascending{
+  position: absolute;
+  top: 0;
+  right:0;
+  
+  border: 8px solid transparent;
+  border-top-color: #cacaca;
+}
+.sorting-order a.order-descending:hover,
+.sorting-order a.order-descending:focus{
+  border: 8px solid transparent;
+  border-bottom-color: #231f20;  
+}
+.sorting-order a.order-ascending:hover,
+.sorting-order a.order-ascending:focus{
+  border: 8px solid transparent;
+  border-top-color: #231f20;  
+}
+
+.sorting-order a.order-descending:active{
+  border: 8px solid transparent;
+  border-bottom-color: #81b3d2;  
+}
+
+.sorting-order a.order-ascending:active{
+  border: 8px solid transparent;
+  border-top-color: #81b3d2;  
 }
 
 img {
