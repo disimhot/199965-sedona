@@ -10,6 +10,7 @@ body {
 
   background-color: #f2f2f2;
   position: relative;
+
 }
 
 a {
@@ -26,8 +27,13 @@ a {
 .main-navigation {
   list-style: none;
 }
+.main-navigation a.current-page {
+  cursor:pointer;
+  color: #b7b7b7;
+}
 
 .main-navigation a {
+  cursor:pointer;
   color: #000000;
 }
 .main-navigation a:hover,
@@ -36,9 +42,6 @@ a {
 }
 .main-navigation a:active {
   color: rgba(183, 183, 183, 0.3);
-}
-.main-navigation a:visited {
-  color: #b7b7b7;
 }
 
 .container .main-slogan {
@@ -101,6 +104,8 @@ div.reasons-info.right {
 
   background-color: #766357;
   border: none;
+
+  cursor:pointer;
 }
 
 .travel-search-button:hover,
@@ -184,6 +189,7 @@ div.reasons-info.right {
 }
 
 .main-footer a {
+  cursor:pointer;
   color: #000000;
 }
 .main-footer ul {
@@ -236,6 +242,8 @@ div.reasons-info.right {
   border-radius: 2px;
 
   background-color: transparent;
+
+  cursor:pointer;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -260,6 +268,7 @@ div.reasons-info.right {
   list-style: none;
 }
 .sorting-parameters a {
+  cursor:pointer;
   font-size: 10.5px;
   line-height: 17.5px;
   color: rgba(0, 0, 0, 0.3);
@@ -281,9 +290,6 @@ div.reasons-info.right {
 
   border-bottom-style: none;
 }
-
-
-
 .hotel-name {
   color: #000000;
   font-size: 21px;
@@ -317,6 +323,7 @@ div.reasons-info.right {
 
   background-color: #81b3d2;
   padding: 3px 17px;
+  cursor:pointer;
 }
 
 .details-button:hover,
@@ -334,7 +341,7 @@ div.reasons-info.right {
   font-weight: bold;
   line-height: 21px;
   padding: 3px 17px;
-
+  cursor:pointer;
   
 }
 .reserve-button:hover,
@@ -355,10 +362,10 @@ div.reasons-info.right {
 /* Сеточные стили */
 .main-header {
   position: relative;
-  z-index: 1;
   width: 1200px;
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0px 0px 10px 0px #000000;
 }
 
 .main-navigation {
@@ -377,6 +384,7 @@ div.reasons-info.right {
 }
 
 .main-navigation a {
+  cursor:pointer;
   display: block;
   width: 239px;
 
@@ -387,6 +395,7 @@ div.reasons-info.right {
 
 .main-header-logo {
   position: absolute;
+  z-index: 2;
   left: 44%;
 }
 
@@ -396,6 +405,9 @@ div.reasons-info.right {
   padding: 0;
 
   background-color: #ffffff;
+}
+.box-shadow-wrapper{
+  box-shadow: 0px 0px 10px 0px #000000;
 }
 .index-main-pic {
   margin: 0;
@@ -614,6 +626,7 @@ div.reasons-info.left img {
   margin-bottom: 35px;
 
   vertical-align: middle;
+  cursor:pointer;
 }
 .search-parameter {
   display: flex;
@@ -737,6 +750,8 @@ div.reasons-info.left img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
+  
 }
 .index-footer{
   
@@ -775,6 +790,7 @@ div.reasons-info.left img {
   height: 48px;
 
   background-color: #81b3d2;
+  cursor:pointer;
 }
 .social-button:hover,
 .social-button:focus {
@@ -1114,6 +1130,7 @@ b.two-stars::before{
   font-size: 0;
 }
 .sorting-order a.order-descending{
+  cursor:pointer;
   position: absolute;
   bottom: 0;
   left:0;
@@ -1122,6 +1139,7 @@ b.two-stars::before{
   border-bottom-color: #cacaca;
 }
 .sorting-order a.order-ascending{
+  cursor:pointer;
   position: absolute;
   top: 0;
   right:0;
