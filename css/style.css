@@ -1018,13 +1018,15 @@ ul.sorting-parameters{
 .inner-item-hotel {
   width: 1056px;
   margin: 0 auto;
-  padding-top: 18px;
+  padding-top: 20px;
   padding-bottom: 14px;  
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+
+  position: relative
 }
 .hotel-wrapper {
   width: 528px;
@@ -1046,9 +1048,8 @@ ul.sorting-parameters{
   width: 50%; 
 }
 .found-hotel-ratings{
-  position: relative;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: -10px;
  
 }
 .found-hotel-ratings p{
@@ -1056,7 +1057,7 @@ ul.sorting-parameters{
   padding: 5px 16px;
   background-color: #f2f2f2;
   margin: 0;
-  margin-top: 46px
+  margin-top: 40px;
 }
 .found-hotel-ratings b{
   display: inline-block;
@@ -1068,16 +1069,44 @@ b.four-stars::before{
 
   background-image: url("../img/star.svg");
   background-size: 21px;
-  width: 82px;
+  width: 84px;
   height: 19px;
   
   font-size: 0;
   position: absolute;
 
-  top: 0;
-  left: 27px;
-
+  top: 28px;
+  right: 0;
 }
+b.three-stars::before{
+  content: "";
+
+  background-image: url("../img/star.svg");
+  background-size: 21px;
+  width: 63px;
+  height: 19px;
+  
+  font-size: 0;
+  position: absolute;
+
+  top: 28px;
+  right: 0;
+}
+b.two-stars::before{
+  content: "";
+
+  background-image: url("../img/star.svg");
+  background-size: 21px;
+  width: 42px;
+  height: 19px;
+  
+  font-size: 0;
+  position: absolute;
+
+  top: 28px;
+  right: 0;
+}
+
 img {
   max-width: 100%;
 }
