@@ -612,10 +612,10 @@ div.reasons-info.left img {
   width: 259px;
 }
 .form-wrapper {
-  height: 244px;
   background-color: #ffffff;
 
   padding-top: 48px;
+  padding-bottom: 132px;
   margin: 0;
 
   display: -webkit-box;
@@ -646,7 +646,7 @@ div.reasons-info.left img {
   padding: 0 69px;
 }
 .map-wrapper {
-  height: 539px;
+  height: 462px;
   position: relative;
   margin: 0;
   padding: 0;
