@@ -706,12 +706,14 @@ div.reasons-info.left img {
 }
 .calendar {
   position: absolute;
-  right: 6px;
+  right: -6px;
+  top: 6px;
 
   margin: 0;
   padding: 0;
   background: none;
   border: 1px solid transparent;
+  margin-right: 12px;
 }
 .calendar path{
   fill: #d4d4d4;
