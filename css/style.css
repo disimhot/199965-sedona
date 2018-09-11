@@ -1009,15 +1009,16 @@ div.reasons-info.left img {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 28px;
+  vertical-align: middle;
 
   cursor: pointer;
 }
-.price-controls .min-price,
-.price-controls .max-price {
-
+.price-controls .min-price{
   padding-left: 65px;
+}
+.price-controls .max-price {
+  padding-left: 75px;
 }
 
 .price-controls input {
@@ -1182,6 +1183,11 @@ ul.sorting-parameters{
   display: -ms-flexbox;
 
   display: flex;
+}
+.hotel-button-wrapper{
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
 }
 .found-hotel-information {
   width: 258px;
