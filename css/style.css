@@ -703,17 +703,19 @@ div.reasons-info.left img {
   width: 345px;
 
   padding-right: 28px;
+  margin-left: 15px;
 }
 .calendar {
   position: absolute;
-  right: -6px;
+  right: 6px;
   top: 6px;
+  bottom: auto;
+  left: auto;
 
   margin: 0;
   padding: 0;
   background: none;
   border: 1px solid transparent;
-  margin-right: 12px;
 }
 .calendar path{
   fill: #d4d4d4;
@@ -742,9 +744,10 @@ div.reasons-info.left img {
   width: 40px;
   text-align: center;
 }
+
 .reduce,
 .add{
-  width:38px;
+  width:39px;
   position: relative;
   cursor: pointer;
   font-size: 0;
@@ -757,6 +760,10 @@ div.reasons-info.left img {
 .reduce::before {
   position: absolute;
   content: "";
+  left:15px;
+  right: auto;
+  top: 18px;
+  bottom: auto;
 
   width: 12px;
   height: 3px;
@@ -768,8 +775,12 @@ div.reasons-info.left img {
 .add::after {
   position: absolute;
   content: "";
+  top:18px;
+  left: 13px;
+  bottom: auto;
+  right: auto;
 
-  width: 12px;
+  width: 13px;
   height: 3px;
 
   background-color: #a9a9a9;  
