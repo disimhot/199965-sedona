@@ -1077,7 +1077,7 @@ div.reasons-info.left img {
   left: 0;
 }
 .range-toggle-max {
-  left: 80%;
+  left: 268px;
 } 
 
 .search-container {
@@ -1232,6 +1232,8 @@ b.four-stars::before{
 
   top: 28px;
   right: 0;
+  bottom: auto;
+  left: auto;
 }
 b.three-stars::before{
   content: "";
