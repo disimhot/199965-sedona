@@ -1235,7 +1235,7 @@ p.four-stars:first-child::before{
   bottom: auto;
   left: auto;
 }
-b.three-stars::before{
+p.three-stars:first-child::before{
   content: "";
 
   background-image: url("../img/star.svg");
@@ -1249,7 +1249,7 @@ b.three-stars::before{
   top: 28px;
   right: 0;
 }
-b.two-stars::before{
+p.two-stars:first-child::before{
   content: "";
 
   background-image: url("../img/star.svg");
