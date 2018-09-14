@@ -198,6 +198,8 @@ div.reasons-info.right {
 }
 .main-footer li {
   list-style: none;
+  margin-left: 2px;
+  margin-right: 4px;
 }
 
 /*Hotels page*/
@@ -307,6 +309,8 @@ div.reasons-info.right {
 }
 .found-hotel-information b {
   display: inline-block;
+  vertical-align: middle;
+
   width: 230px;
   line-height: 21px;
   font-weight: normal;
@@ -345,7 +349,7 @@ div.reasons-info.right {
   line-height: 21px;
   padding: 3px 18px;
   cursor:pointer;
-  
+  vertical-align: middle;
 }
 .reserve-button:hover,
 .reserve-button:focus {
@@ -440,6 +444,7 @@ div.reasons-info.right {
   background-image: url("../img/ind/index-main-group.jpg");
   background-repeat: no-repeat;
   background-position-y: -82px;
+  background-color: #a9a9a9;
 
   position: relative;
 }
@@ -496,6 +501,8 @@ div.reasons-info.right {
 }
 .main-slogan-wrapper > p {
   padding-bottom: 51px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .reasons-attractions {
@@ -527,18 +534,22 @@ div.reasons-info.right {
 }
 .reasons-name {
   display: inline-block;
+  vertical-align: middle;
+
   margin: auto;
   width: 151px;
 }
 
 .reasons-number {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .reasons-description {
   display: inline-block;
+  vertical-align: middle;
   width: 306px;
   margin: auto;
 }
@@ -549,6 +560,7 @@ div.reasons-info.left {
 }
 div.reasons-info.left img {
   margin-left: auto;
+  height: auto;
 }
 .attractions {
   display: -webkit-box;
@@ -572,6 +584,7 @@ div.reasons-info.left img {
 }
 .attractions-description {
   display: inline-block;
+  vertical-align: middle;
   width: 287px;
   padding-left: 54px;
 }
@@ -606,8 +619,9 @@ div.reasons-info.right {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-div.reasons-info.left img {
+div.reasons-info.right img {
   margin-right: auto;
+  height: auto;
 }
 .reasons-container {
   display: -webkit-box;
@@ -628,7 +642,7 @@ div.reasons-info.left img {
 .form-wrapper {
   background-color: #ffffff;
 
-  padding-top: 48px;
+  padding-top: 49px;
   padding-bottom: 138px;
   margin: 0;
 
@@ -862,21 +876,28 @@ div.reasons-info.left img {
   font-weight: bold;
   font-size: 21px;
 
-  margin-left: 132px;
-  margin-right: 34px;
   margin-top: -6px;
+
+  width: 33.33%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
 }
 .footer-copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 
-  margin-right: 96px;
+  width: 33.33%;
+  justify-content: center;
+
+  margin-top: 20px;
 }
 .footer-copyright b {
   display: inline-block;
+  vertical-align: middle;
 
-  margin: 11px 5px;
+  margin: 7px 5px;
 }
 
 .social-button {
@@ -918,10 +939,10 @@ div.reasons-info.left img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 151px;
+
+
+  justify-content: center;
+  width: 33.33%;
 }
 .filter ul{
   margin:0;
@@ -1022,10 +1043,10 @@ div.reasons-info.left img {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
 
   font-size: 14px;
   line-height: 28px;
-  vertical-align: middle;
 
   cursor: pointer;
 }
@@ -1216,6 +1237,8 @@ ul.sorting-parameters{
 .found-hotel-information span{
   display: inline-block;
   width: 50%; 
+
+  vertical-align: middle;
 }
 .found-hotel-ratings{
   margin-top: 10px;
@@ -1225,6 +1248,8 @@ ul.sorting-parameters{
 }
 .found-hotel-ratings p:nth-child(2){
   display: inline-block;
+  vertical-align: middle;
+
   padding: 3px 13px;
   background-color: #f2f2f2;
   margin: 0;
