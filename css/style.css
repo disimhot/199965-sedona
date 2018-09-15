@@ -120,6 +120,7 @@ div.reasons-info.right {
 
 .search-form fieldset {
   border: none;
+  padding-top: 40px;
 }
 
 .search-form label {
@@ -697,7 +698,6 @@ div.reasons-info.right img {
   width: 100%;
   padding-top: 31px;
   padding-bottom: 30px;
-  margin-bottom: 35px;
 
   vertical-align: middle;
   cursor:pointer;
