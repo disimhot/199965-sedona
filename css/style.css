@@ -315,7 +315,7 @@ div.reasons-info.right {
   line-height: 21px;
   font-weight: normal;
 
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 }
 
 .details-button {
@@ -347,7 +347,8 @@ div.reasons-info.right {
   font-size: 14px;
   font-weight: bold;
   line-height: 21px;
-  padding: 3px 18px;
+  padding: 3px 17px;
+  padding-top: 4px;
   cursor:pointer;
   vertical-align: middle;
 }
@@ -642,7 +643,7 @@ div.reasons-info.right img {
 .form-wrapper {
   background-color: #ffffff;
 
-  padding-top: 49px;
+  padding-top: 44px;
   padding-bottom: 138px;
   margin: 0;
 
@@ -953,7 +954,7 @@ div.reasons-info.right img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-left: 60px;
   padding-right: 73px;
 }
@@ -1141,7 +1142,7 @@ div.reasons-info.right img {
 }
 .search-items {
   width: 528px;
-  padding-top:29px;
+  padding-top:27px;
   padding-bottom:28px;
 
   display: -webkit-box;
@@ -1182,17 +1183,17 @@ ul.sorting-parameters{
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .found-hotel:first-child {
-  border-top: 2px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 .inner-item-hotel {
   width: 1056px;
   margin: 0 auto;
   padding-top: 21px;
-  padding-bottom: 12px;  
+  padding-bottom: 13px;  
 
   display: -webkit-box;  
 
@@ -1222,7 +1223,7 @@ ul.sorting-parameters{
 }
 .hotel-button-wrapper{
   display: flex;
-  width: 260px;
+  width: 258px;
   justify-content: space-between;
 }
 .found-hotel-information {
