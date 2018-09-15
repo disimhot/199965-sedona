@@ -1260,8 +1260,9 @@ p.four-stars{
   content: "";
 
   background-image: url("../img/star.svg");
+  background-repeat: round;
   background-size: 21px;
-  width: 84px;
+  width: 90px;
   height: 19px;
   
   font-size: 0;
@@ -1276,8 +1277,9 @@ p.three-stars{
   content: "";
 
   background-image: url("../img/star.svg");
+  background-repeat: round;
   background-size: 21px;
-  width: 63px;
+  width: 65px;
   height: 19px;
   
   font-size: 0;
