@@ -341,7 +341,6 @@ div.reasons-info.right {
 
   background-color: #81b3d2;
   padding: 3px 17px;
-  padding-bottom: 4px;
 
   cursor: pointer;
 }
@@ -361,7 +360,7 @@ div.reasons-info.right {
   font-weight: bold;
   line-height: 21px;
   padding: 3px 17px;
-  padding-top: 4px;
+
   cursor: pointer;
   vertical-align: middle;
 }
@@ -442,8 +441,8 @@ div.reasons-info.right {
   padding: 0;
 
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 10px 0px #000000;
-  box-shadow: 0px 0px 10px 0px #000000;
+
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 .index-main-pic {
@@ -1194,8 +1193,8 @@ ul.sorting-parameters {
 .inner-item-hotel {
   width: 1056px;
   margin: 0 auto;
-  padding-top: 21px;
-  padding-bottom: 13px;
+  padding-top: 20px;
+  padding-bottom: 12px;
 
   display: -webkit-box;
 
@@ -1227,10 +1226,13 @@ ul.sorting-parameters {
   display: flex;
   width: 258px;
   justify-content: space-between;
+  margin-top: 1px;
+
 }
 .found-hotel-information {
   width: 258px;
   margin-left: 30px;
+  margin-top: 2px;
 }
 .found-hotel-information h3 {
   padding: 0;
@@ -1256,7 +1258,7 @@ ul.sorting-parameters {
   padding: 3px 13px;
   background-color: #f2f2f2;
   margin: 0;
-  margin-top: 42px;
+  margin-top: 46px;
 }
 
 p.four-stars {
