@@ -644,6 +644,7 @@ div.reasons-info.right img {
 
   width: 260px;
   padding-top: 5px;
+  vertical-align: center;
 }
 .reasons-info:last-child .reasons-description {
   width: 259px;
